@@ -10,7 +10,6 @@ LaughingMan.prototype.start = function() {
     if (!document.getElementsByTagName) return;
     var imageArray = document.getElementsByTagName("img");
     var content = new Array();
-    var zImages;
     var activeImages = 0;
     for (var i = 0; i < imageArray.length; i++) {
         content[activeImages] = imageArray[i];
@@ -22,7 +21,7 @@ LaughingMan.prototype.start = function() {
             if (!content.push || !document.all) {
                 content[x].height = imageArray[x].height;
                 content[x].width = imageArray[x].width;
-                content[x].src = "https://i.imgur.com/u6A3oCM.gif";
+                content[x].src = this.laughingManImage;
             } else {
                 content[x].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',src='img/new_png.png')";
                 content[x].height = imageArray[x].height;
