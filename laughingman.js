@@ -3,7 +3,7 @@
  */
 function LaughingMan() {
 
-    this.laughingManImage = "https://i.imgur.com/u6A3oCM.gif";
+    this.laughingManImage = "/assets/images/laughingman.gif";
 }
 
 LaughingMan.prototype.start = function() {
